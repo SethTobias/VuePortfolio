@@ -55,10 +55,6 @@ export default {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vmax;
 }
 
 .nav-container {
@@ -67,6 +63,10 @@ nav {
   grid: "a b c" / 1fr 4fr 1fr;
   gap: 4rem;
   height: 10vh;
+  position: fixed;
+  width: 100vmax;
+  top: 0;
+  left: 0;
 }
 
 .nav-icon {
