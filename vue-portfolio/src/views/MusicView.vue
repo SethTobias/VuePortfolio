@@ -1,6 +1,7 @@
 <template>
   <Navbar />
-  <div class="music-main-continer">
+  <div class="music-main-container">
+    <h2>Music:</h2>
     <div class="music-container-grid">
       <div class="music-text">
         <p>
@@ -48,17 +49,27 @@ export default {
   --secondary: #5cd1ff;
   --accent: #007cf0;
 }
+
 .music-main-container {
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
   width: 1200px;
-  height: 800px;
 }
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .music-container-grid {
   display: grid;
   grid: "txt iframe" 1fr / 1fr 1fr;
+  gap: 10px;
 }
 .music-text {
   grid-area: txt;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
 }
 .music-iframe {
   grid-area: iframe;

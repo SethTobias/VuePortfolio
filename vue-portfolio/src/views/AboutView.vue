@@ -253,7 +253,10 @@ export default {
 }
 
 .about-main-content {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1200px;
 }
 
 .about-main-content-grid {
@@ -291,7 +294,7 @@ h1 {
 
 .about-content-container p {
   font-size: 1.8rem;
-  line-height: 2.7rem;
+  line-height: 1.7rem;
 }
 
 .image-map-container {
@@ -303,8 +306,14 @@ h1 {
   justify-content: center;
 }
 
-.image-map-text {
+.image-map-text h2 {
   text-align: center;
+  font-size: 3rem;
+}
+
+.image-map-text p {
+  text-align: center;
+  font-size: 1.9rem;
 }
 
 .image-map-container img {
