@@ -1,68 +1,66 @@
 <template>
   <Navbar />
-  <main>
-    <div class="index-container">
-      <div class="index-main">
-        <div class="index-main-img">
+  <div class="index-container">
+    <div class="index-main">
+      <div class="index-main-img">
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQOaEOcG2XSy5xi6W1b0C3DXLH99AyX9wrRIR_9wAxoe4IXAeNjibAQsYXK2gdj-BTwPtW6t_rB8niTyqKmaZP1bo8OoA=s1600"
+          alt=""
+        />
+      </div>
+      <div class="index-main-info">
+        <p>I am Seth Tobias,</p>
+        <p>An Aspiring Developer.</p>
+        <p>Based in Tableview, CapeTown.</p>
+      </div>
+    </div>
+    <div class="index-extra-flex">
+      <div class="index-extra-projects">
+        <h2>My recent projects:</h2>
+        <div class="index-extra-projects-grid">
           <img
-            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQOaEOcG2XSy5xi6W1b0C3DXLH99AyX9wrRIR_9wAxoe4IXAeNjibAQsYXK2gdj-BTwPtW6t_rB8niTyqKmaZP1bo8OoA=s1600"
+            class="index-project latest"
+            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
             alt=""
           />
-        </div>
-        <div class="index-main-info">
-          <p>I am Seth Tobias,</p>
-          <p>An Aspiring Developer.</p>
-          <p>Based in Tableview, CapeTown.</p>
+          <div><a href="">See a preview of my projects!</a></div>
+          <img
+            class="index-project old"
+            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
+            alt=""
+          />
+          <div><a href="">See a preview of my projects!</a></div>
+          <img
+            class="index-project older"
+            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
+            alt=""
+          />
+          <div><a href="">See a preview of my projects!</a></div>
+          <img
+            class="index-project-oldest"
+            src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
+            alt=""
+          />
+          <div><a href="">See a preview of my projects!</a></div>
         </div>
       </div>
-      <div class="index-extra-flex">
-        <div class="index-extra-projects">
-          <h2>My recent projects:</h2>
-          <div class="index-extra-projects-grid">
+      <div class="index-extra-cv">
+        <h2>My curriculum Vitae:</h2>
+        <div class="index-extra-cv-card">
+          <div class="index-cv-img">
             <img
-              class="index-project latest"
-              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
+              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR9JP9ZoP1E90DulmLQBzS59MU1q2iJ1oed1MzcSQ5JxfhQPAuuv-BToRSSR1ESD7dlnYS7XoUgm_wZwWHmFHk5Ts9OhQ=s2560"
               alt=""
             />
-            <div><a href="">See a preview of my projects!</a></div>
-            <img
-              class="index-project old"
-              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
-              alt=""
-            />
-            <div><a href="">See a preview of my projects!</a></div>
-            <img
-              class="index-project older"
-              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
-              alt=""
-            />
-            <div><a href="">See a preview of my projects!</a></div>
-            <img
-              class="index-project-oldest"
-              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLtxmzBnoImDOB_2yd8TbQoDE10MnYH4hyBXUM1wtXjldqGuPCeb5Zgo5H9hfGLZpXaw9aVceU0oGWrC_3vH4aazqMpQ=s1600"
-              alt=""
-            />
-            <div><a href="">See a preview of my projects!</a></div>
           </div>
-        </div>
-        <div class="index-extra-cv">
-          <h2>My curriculum Vitae:</h2>
-          <div class="index-extra-cv-card">
-            <div class="index-cv-img">
-              <img
-                src="https://drive.google.com/uc?id=19b0HKDMgti0Z37jsg4nhQdOenrOmwdGn"
-                alt=""
-              />
-            </div>
-            <div class="index-cv-buttons">
-              <div>Print</div>
-              <div>Download</div>
-            </div>
+          <div class="index-cv-buttons">
+            <div>Print</div>
+            <div>Download</div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
   <Footer />
 </template>
 
@@ -87,10 +85,11 @@ export default {
   --secondary: #5cd1ff;
   --accent: #007cf0;
 }
-main {
-  margin-top: 100px;
-}
+
 .index-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1200px;
 }
 
 .index-main {
@@ -159,7 +158,7 @@ main {
 
 .index-extra-projects-grid div:nth-of-type(1n) {
   grid-area: a;
-  z-index: 2;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-self: center;
