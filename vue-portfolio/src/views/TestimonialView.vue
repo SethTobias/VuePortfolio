@@ -1,6 +1,7 @@
 <template>
   <Navbar />
   <div class="testimonial-main-container">
+    <h2>Testimonial:</h2>
     <div class="testimonial-container-grid">
       <div class="testimonial-items1">
         <div class="card1 testimonial-card">
@@ -141,9 +142,14 @@ export default {
 }
 
 .testimonial-main-container {
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
   width: 1200px;
-  height: 800px;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .testimonial-container-grid {
@@ -153,6 +159,8 @@ export default {
 
 .testimonial-card {
   background-color: var(--secondary);
+  height: fit-content;
+  width: fit-content;
 }
 
 .testimonial-items1 {
@@ -160,12 +168,18 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  z-index: 1;
+  z-index: -1;
+}
+
+.testimonial-items1 .testimonial-card {
+  background-color: var(--secondary);
 }
 
 .container-grid {
+  height: 400px;
+  width: 300px;
   display: grid;
-  grid: "img" 4fr "description" 1fr / 1fr;
+  grid: "img" 75% "description" 25% / 1fr;
 }
 
 .img-container {
@@ -174,7 +188,8 @@ export default {
 
 .description {
   grid-area: description;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  background-color: var(--primary);
 }
 
 .description-collapsed {
@@ -187,7 +202,6 @@ export default {
 
 .description {
   grid-area: description;
-  height: 10%;
   overflow-y: hidden;
 }
 
@@ -199,7 +213,7 @@ export default {
   margin: 0;
 }
 
-.testimonial-card1 {
+.card1.testimonial-card {
   margin: 0;
 }
 
@@ -276,7 +290,11 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  z-index: -1;
+  z-index: -2;
+}
+
+.testimonial-items2 .testimonial-card {
+  background-color: var(--primary);
 }
 
 .testimonial-card4 {
@@ -327,7 +345,7 @@ export default {
   margin: 0;
 }
 
-.testimonial-card6 {
+.card6.testimonial-card {
   margin: 0;
 }
 
