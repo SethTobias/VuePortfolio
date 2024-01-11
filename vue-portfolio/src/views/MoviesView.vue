@@ -1,15 +1,25 @@
 <template>
   <Navbar />
   <div class="movies-main-container">
+    <h2>Movies:</h2>
     <div class="movies-container-grid">
       <div class="img-span-row2">
-        <img src="https://drive.google.com/uc?id=" alt="" />
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRSGiddPnpYREHWY2gJzCH2ZabQs4rGKHPSMf6BxAc6kwg67FDcohC2esNIxgtnm1gMkmmHnCv0D7y7d17KFZRqslcfRg=s1600"
+          alt=""
+        />
       </div>
       <div class="img-center-end">
-        <img src="https://drive.google.com/uc?id=" alt="" />
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRNiBUENSJTBVeM7j6V1KaPDjl4sGayi0aS3-6UrxJNEgeRdeMDCRWHUph2_40OnS-vKw6aVf3OvPs9wOZJJKc3YRsD=s2560"
+          alt=""
+        />
       </div>
       <div class="img-start-end">
-        <img src="https://drive.google.com/uc?id=" alt="" />
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_q4I1JsqfNENSyp2TgR9H2XtCmv26dNHffpeHgzyCBOQ17NUcGri0DQ1uRJpFbcnDu2YbADAqBWB742GQR7MnQp-v=s2560"
+          alt=""
+        />
       </div>
       <div class="txt-span-col2">
         <p>
@@ -51,9 +61,14 @@ export default {
 }
 
 .movies-main-container {
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
   width: 1200px;
-  height: 800px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
 }
 
 .movies-container-grid {
@@ -63,6 +78,12 @@ export default {
 
 .img-span-row2 {
   grid-area: 1/3/3/4;
+  padding-top: 3.5px;
+}
+
+.img-span-row2 img {
+  height: 600px;
+  width: 400px;
 }
 
 .img-center-end {
@@ -73,7 +94,15 @@ export default {
   grid-area: 2/1/3/2;
 }
 
+.img-start-end img,
+.img-center-end img {
+  height: 300px;
+  width: 400px;
+}
+
 .txt-span-col2 {
   grid-area: 1/1/2/3;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
 }
 </style>
