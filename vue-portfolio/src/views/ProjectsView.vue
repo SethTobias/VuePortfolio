@@ -95,7 +95,7 @@ export default {
   margin: 0 auto;
   margin-top: 50px;
   max-width: 1200px;
-  min-width: 250;
+  min-width: 250px;
 }
 
 h2 {

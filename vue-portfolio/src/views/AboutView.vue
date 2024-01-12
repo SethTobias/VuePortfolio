@@ -231,6 +231,7 @@
 </template>
 
 <script>
+import { mapState, mapActions } from "vuex";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 
@@ -239,6 +240,19 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  computed: {
+    ...mapState(["jsonData"]),
+  },
+  methods: {
+    ...mapActions(["fetchJsonData"]),
+    fetchData() {
+      this.fetchJsonData();
+    },
+  },
+  mounted() {
+    // Fetch data when the view is first loaded
+    this.fetchData();
   },
 };
 </script>

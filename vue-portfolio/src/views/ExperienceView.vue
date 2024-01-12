@@ -14,8 +14,8 @@
         <h4>Matric Results</h4>
         <div class="matric-flex">
           <div class="matric-mini-flex">
-            <p>Subject</p>
-            <p>Mark Achieved</p>
+            <h5>Subject</h5>
+            <h5>Mark Achieved</h5>
           </div>
           <div class="matric-mini-flex">
             <p>Computer Applications:</p>

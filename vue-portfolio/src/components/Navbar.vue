@@ -60,8 +60,8 @@ nav {
 .nav-container {
   background-color: var(--text);
   display: grid;
-  grid: "a b c" / 1fr 4fr 1fr;
-  gap: 4rem;
+  grid: "a b c" / 1fr minmax(auto, 4fr) 1fr;
+  gap: minmax(5px, 4rem);
   height: 10vh;
   position: fixed;
   width: 100vmax;
@@ -81,13 +81,13 @@ nav {
 
 .nav-link-grid {
   display: grid;
-  grid: 1fr / 1fr;
+  grid: 1fr / minmax(50px, 1fr);
 }
 
 .link-items-1 {
   grid-area: 1/1/1/1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   animation: navDisappear 8s 5s ease-in-out infinite;
 }
 

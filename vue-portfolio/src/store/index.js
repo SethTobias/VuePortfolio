@@ -1,14 +1,30 @@
-import { createStore } from 'vuex'
+// store.js
+import { createStore } from "vuex";
+import axios from "axios";
 
 export default createStore({
   state: {
-  },
-  getters: {
+    jsonData: null,
   },
   mutations: {
+    setJsonData(state, data) {
+      state.jsonData = data;
+    },
   },
   actions: {
+    fetchJsonData({ commit }) {
+      return axios
+        .get("https://sethtobias.github.io/VuePortfolioData/")
+        .then((response) => {
+          commit("setJsonData", response.data.data);
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON data:", error);
+        });
+    },
   },
-  modules: {
-  }
-})
+  getters: {
+    getJsonData: (state) => state.jsonData,
+  },
+  modules: {},
+});
