@@ -1,7 +1,9 @@
 <template>
+  <!-- HomeView.vue -->
   <Navbar />
   <div class="index-container">
     <div class="index-main">
+      <h2>Home:</h2>
       <div class="index-main-img">
         <img
           src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQOaEOcG2XSy5xi6W1b0C3DXLH99AyX9wrRIR_9wAxoe4IXAeNjibAQsYXK2gdj-BTwPtW6t_rB8niTyqKmaZP1bo8OoA=s1600"
@@ -60,11 +62,16 @@
         </div>
       </div>
     </div>
+    <p v-if="jsonData">
+      {{ jsonData }}
+    </p>
   </div>
   <Footer />
 </template>
 
 <script>
+import axios from "axios";
+import { mapState, mapActions } from "vuex";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 
@@ -73,6 +80,28 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  computed: {
+    ...mapState(["jsonData"]),
+  },
+  methods: {
+    ...mapActions(["fetchJsonData"]),
+    fetchData() {
+      axios
+        .get("https://sethtobias.github.io/VuePortfolioData/")
+        .then((response) => {
+          this.info = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+          this.errored = true;
+        })
+        .finally(() => (this.loading = false));
+    },
+  },
+  mounted() {
+    // Fetch data when the view is first loaded
+    this.fetchData();
   },
 };
 </script>
